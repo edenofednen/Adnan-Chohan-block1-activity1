@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
     <TextView
         android:id="@+id/Placeholder"
-        android:layout_width="350dp"
-        android:layout_height="67dp"
+        android:layout_width="335dp"
+        android:layout_height="180dp"
         android:layout_weight="1"
         android:text="placeholder" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="224dp"
+        android:layout_weight="1">
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="113dp"
+            android:layout_height="42dp"
+            android:ems="10"
+            android:inputType="text"
+            android:text="Corner Text"
+            tools:layout_editor_absoluteX="127dp"
+            tools:layout_editor_absoluteY="3dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </LinearLayout>
